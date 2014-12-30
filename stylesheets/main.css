@@ -46,8 +46,8 @@ h4 {
     margin-bottom: 1.375em;
 }
 p, ul, ol, pre, table, blockquote {
-    margin-top: 1.375em;
-    margin-bottom: 1.375em;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
 }
 ul ul, ol ol, ul ol, ol ul {
     margin-top: 0;
