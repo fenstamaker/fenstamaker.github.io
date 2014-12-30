@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+  body {
+  font-family: "Cardo", serif;
+  font-size: 2.1em;
+  line-height: 1.8;
+  color: #222;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+}
+h1 {
+  font-size: 3.75em;
+  line-height: 1em;
+  margin-bottom: 0.66666667em;
+  margin-top: 0.33333333em;
+}
+h2 {
+  font-size: 2.5625em;
+  line-height: 1.073170732em;
+  margin-top: 1.07317073em;
+  margin-bottom: 0.53658537em;
+}
+h3 {
+  font-size: 1.625em;
+  line-height: 1.692307692em;
+  margin-top: 0.84615385em;
+  margin-bottom: 0.84615385em;
+}
+h4 {
+  font-size: 1em;
+  line-height: 1.375em;
+  margin-top: 1.375em;
+  margin-bottom: 1.375em;
+}
+p, ul, ol, pre, table, blockquote {
+  margin-top: 1.375em;
+  margin-bottom: 1.375em;
+}
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+b, strong, em, small, code {
+  line-height: 1;
+}
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+sub {
+  top: 0.4em;
+}
+
+article p {
+  text-indent: 1.75em;
+}
+
+aside {
+  position: relative;
+  float: left;
+  clear: left;
+  right: 17.3333333333%;
+  width: 14.3333333333%;
+  margin-right: -14.3333333333%;
+  border-right: 1px solid #cccccc;
+}
+
+aside p {
+  padding-right: 1.5rem;
+  font-size: 1.5rem;
+  color: #999999;
+  text-align: right;
+}
+
+.header { 
+  border-bottom: 1px solid #aaaaaa;
+  color: #aaaabb;
+}
