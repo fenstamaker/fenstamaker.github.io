@@ -80,7 +80,7 @@ sup, sub {
 sub {
     top: 0.4em;
 }
-article p {
+article.post p {
     text-indent: 1.75em;
 }
 /* List
