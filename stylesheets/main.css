@@ -83,6 +83,20 @@ sub {
 article.post p {
     text-indent: 1.75em;
 }
+article header {
+    text-align: center;
+}
+.header { 
+    border-bottom: 1px solid #aaaaaa;
+    text-align: center;
+    margin-top: 1em;
+}
+.header h1 {
+    font-family: Raleway, serif;
+    font-size: 1.75em;
+    color: #8a8a8a;
+}
+
 /* List
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
@@ -107,7 +121,11 @@ li {
 
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+pre {
+    font-family: "Source Code Pro", monospace;
+}
 code {
+    font-family: "Source Code Pro", monospace;
     padding: .2rem .5rem;
     margin: 0 .2rem;
     font-size: 90%;
@@ -145,15 +163,20 @@ td:last-child {
 .row {
     clear: both;
 }
+.content {
+    margin-top: 2em;
+}
 .content, aside {
     width: 100%;
 }
-.header { 
-    border-bottom: 1px solid #aaaaaa;
-    color: #aaaabb;
-}
 aside {
+    display: none;
     border-top: 1px solid #cccccc;
+}
+aside.meta {
+    display: block;
+    margin-bottom: 1em;
+    font-size: 1.3em;
 }
 aside p {
     color: #999999;
@@ -176,7 +199,8 @@ aside p {
 	width: 80%;
     }
 }
-@media (min-width: 760px) {
+@media (min-width: 768px) 
+and (orientation : landscape) {
     html {
 	font-size: 10px;
     }
@@ -184,7 +208,14 @@ aside p {
 	margin-left: 20%;
 	width: 80%;
     }
+    article header {
+    	margin-left: -25%;
+    }
+    aside.meta {
+	margin-bottom: 0;
+    }
     aside {
+	display: block;
 	position: relative;
 	float: left;
 	clear: left;

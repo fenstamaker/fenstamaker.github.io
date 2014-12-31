@@ -10,6 +10,7 @@
 
     <title>Gary Fenstamaker</title>
     <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700;Playfair+Display:700;Source+Code+Pro' />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" />
     <link rel="stylesheet" type="text/css" href="stylesheets/main.css" />
@@ -25,9 +26,7 @@
 <body>
 <div id="content" class="container">
     <div class="row header">
-        <div class="content">
-            <h3>Gary Fenstamaker</h3>
-        </div>
+        <h1>Gary Fenstamaker</h1>
     </div>
     <div class="row">
         <div class="content">
@@ -35,7 +34,9 @@
                 <header>
                     <h1>Is it not a saying in every one's mouth</h1>
                 </header>
-                
+		<aside class="meta">
+		    <p>Published Dec 31, 2014.</p>
+		</aside>
                 <section>
                     <p>"My boy," said the landlord, "you'll have the nightmare to a dead sartainty."</p>
 
@@ -95,6 +96,9 @@
                     </ul>
 
 
+		<aside>
+		    <p>Figure 3.1</p>
+		</aside>
 <pre><code class="clojure">(defn get-articles-to-recommend-temp [& args]
     (->> "/data/clavis/config/june_stories.json"
          (clojure.java.io/reader)
