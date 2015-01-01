@@ -16,7 +16,7 @@ body {
     font-size: 2.1em;
     line-height: 2.0em;
     color: #222;
-    background: #E9E7E8;
+    background: #F0EEEE;
 }
 .container {
     position: relative;
@@ -92,16 +92,19 @@ article header {
     border-bottom: 1px solid #aaaaaa;
     margin-top: 1em;
 }
-.header h1, .header h2, .header h3 {
+.header h1 {
     color: #444444;
     font-style: italic;
+}
+.header h1::first-letter {
+    margin-right: -9px;
 }
 article.post aside p {
     text-indent: 0;
     color: #999999;
     font-size: 0.6em;
     line-height: 1.8em;
-    padding-top: 0.5rem;
+    padding: 0.25em 1em 0.5em 1em;
 }
 
 
@@ -171,10 +174,10 @@ td:last-child {
 .logo-bg {
     background: #00C5FF;
     width: 20em;
-    height: 1.5em;
-    margin-top: -4em;
+    height: 1.3em;
+    margin-top: -3.8em;
     margin-bottom: 1em;
-    margin-left: 2.6em;
+    margin-left: 2.5em;
     z-index: -1;
 }
 .row {
@@ -189,7 +192,7 @@ td:last-child {
 aside {
     display: none;
     border-top: 1px solid #cccccc;
-    background: #aaaaaa;
+    background: #ECEAEA;
 }
 aside.meta {
     display: block;
@@ -217,15 +220,15 @@ and (orientation : landscape) {
 	font-size: 10px;
     }
     .blog {
-	margin-right: 20%;
-	width: 80%;
+	margin-right: 25%;
+	width: 75%;
     }
     .static {
 	margin: 0 auto;
 	width: 60%;
     }
     article.post > header {
-    	margin-right: -25%;
+    	margin-right: -30%;
     }
     aside.meta {
 	margin-bottom: 0;
@@ -235,9 +238,9 @@ and (orientation : landscape) {
 	position: relative;
 	float: right;
 	clear: left;
-	left: 20%;
-	width: 17%;
-	margin-left: -17%;
+	left: 30%;
+	width: 30%;
+	margin-left: -25%;
 	border-left: 1px solid #cccccc;
     }
     aside p {
