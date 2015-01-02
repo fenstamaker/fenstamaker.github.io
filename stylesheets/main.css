@@ -262,13 +262,9 @@ and (orientation : landscape) {
     html {
 	font-size: 10px;
     }
-    .blog {
+    .blog, .static {
 	margin-right: 25%;
 	width: 75%;
-    }
-    .static {
-	margin: 0 auto;
-	width: 60%;
     }
     article.post > header {
     	margin-right: -30%;
