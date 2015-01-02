@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Background pattern from subtlepatterns.com */
 
 /* Base
    Inherited a lot of base style from Skeleton
@@ -7,17 +8,20 @@
 * {
     box-sizing: border-box;
 }
+
 html {
     font-size: 9px;
 }
+
 body {
     border-top: 5px solid #00C5FF;
     font-family: "Cardo", serif;
     font-size: 2.1em;
     line-height: 2.0em;
     color: #222;
-    background: #F0EEEE;
+    background: url("../images/seamless_paper_texture_40.png") #F0EEEE repeat;
 }
+
 .container {
     position: relative;
     width: 100%;
@@ -25,10 +29,12 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+
 a {
     color: #1EAEDB;
     text-decoration: none;
 }
+
 a:hover {
     color: #0FA0CE;
     text-decoration: underline;
@@ -38,42 +44,51 @@ a:hover {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
     font-family: "Playfair Display", serif;
+    color: #444444;
 }
+
 h1 {
     font-size: 3.75em;
     line-height: 1em;
     margin-bottom: 0.66666667em;
     margin-top: 0.33333333em;
 }
+
 h2 {
     font-size: 2.5625em;
     line-height: 1.073170732em;
     margin-top: 1.07317073em;
     margin-bottom: 0.53658537em;
 }
+
 h3 {
     font-size: 1.625em;
     line-height: 1.692307692em;
     margin-top: 0.84615385em;
     margin-bottom: 0.84615385em;
 }
+
 h4 {
     font-size: 1em;
     line-height: 1.375em;
     margin-top: 1.375em;
     margin-bottom: 1.375em;
 }
+
 p, ul, ol, pre, table, blockquote {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
+
 ul ul, ol ol, ul ol, ol ul {
     margin-top: 0;
     margin-bottom: 0;
 }
+
 b, strong, em, small, code {
     line-height: 1;
 }
+
 sup, sub {
     vertical-align: baseline;
     position: relative;
@@ -82,29 +97,52 @@ sup, sub {
 sub {
     top: 0.4em;
 }
+
+::-moz-selection {
+    background: yellow;
+}
+
+::selection {
+    background: yellow;
+}
+
 article.post p {
     text-indent: 1.75em;
 }
+
 article header {
-    text-align: center;
+    text-align: left;
 }
+
 .header { 
     border-bottom: 1px solid #aaaaaa;
     margin-top: 1em;
+    padding-bottom: 1em;
 }
+
 .header h1 {
-    color: #444444;
     font-style: italic;
 }
+
 .header h1::first-letter {
     margin-right: -9px;
 }
+
 article.post aside p {
     text-indent: 0;
-    color: #999999;
+    color: #7E7E7E;
     font-size: 0.6em;
     line-height: 1.8em;
     padding: 0.25em 1em 0.5em 1em;
+}
+
+.meta {
+    font-family: "Playfair Display", serif;
+    margin-top: -1.5em;
+    font-size: 0.8em;
+    color: #868686;
+    font-style: italic;
+    text-indent: 0!important;
 }
 
 
@@ -180,24 +218,27 @@ td:last-child {
     margin-left: 2.5em;
     z-index: -1;
 }
+
 .row {
     clear: both;
 }
+
 .content {
     margin-top: 2em;
 }
+
 .content, aside {
     width: 100%;
 }
+
+.post > header {
+    margin-bottom: 1em;
+}
+
 aside {
     display: none;
     border-top: 1px solid #cccccc;
     background: #ECEAEA;
-}
-aside.meta {
-    display: block;
-    margin-bottom: 1em;
-    font-size: 1.3em;
 }
 
 
@@ -209,11 +250,13 @@ aside.meta {
 	padding: 0;
     }
 }
+
 @media (min-width: 550px) {
     .container {
 	width: 80%;
     }
 }
+
 @media (min-width: 768px) 
 and (orientation : landscape) {
     html {
