@@ -15,7 +15,7 @@
 
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:700|Source+Code+Pro|Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700;Playfair+Display:700,700italic;Source+Code+Pro' />
     
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" />
     <link rel="stylesheet" type="text/css" href="stylesheets/main.css" />
@@ -29,10 +29,13 @@
     <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png" />
 </head>
 <body>
-<div id="content" class="container">
-    <div class="row header">
-        <h3>Gary Fenstamaker</h3>
-    </div>
+    <div id="content" class="container">
+	<div class="row header">
+            <h1>Fenstamaker</h1>
+	    <div class="logo-bg">
+		&nbsp;
+	    </div>
+	</div>
     <div class="row">
 	{{ content }}
     </div>
