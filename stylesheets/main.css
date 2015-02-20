@@ -136,8 +136,18 @@ h1, h2 {
     padding-left: 0;
 }
 
+.tower .col-xs-12:first-child {
+    height: 200px;
+}
+
 .footer {
     margin-top: 25px;
     border-top: 1px dotted #fff;
 }
 
+
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}
